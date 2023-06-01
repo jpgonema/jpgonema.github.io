@@ -57,7 +57,7 @@ const layers = {
       attribution: "USGS",
     }),
     
-    "Topo": L.tileLayer("https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}", {
+    "Topo2": L.tileLayer("https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}", {
       maxNativeZoom: 16,
       maxZoom: map.getMaxZoom(),
       attribution: "USGS",
