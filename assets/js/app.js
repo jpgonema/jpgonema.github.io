@@ -62,6 +62,11 @@ const layers = {
       maxZoom: map.getMaxZoom(),
       attribution: "USGS",
     }),
+    
+    	    "Propluvia": L.tileLayer.WMS("https://carto2.geo-ide.din.developpement-durable.gouv.fr/rest-api/ows/01f97add-7e35-4d4e-a55c-947d955a4e47/ZA_SECH_SUIVI?VERSION=1.3.0&TRANSPARENT=true&LAYERS=ZA_SECH_SUIVI&ISBASELAYER=false&EXCEPTIONS=inimage&SRS=EPSG%3A2154&CRS=EPSG%3A2154&STYLES=&WIDTH=2727&HEIGHT=1128&BBOX=563030.1981120347%2C6713306.9875452565%2C715121.6281383603%2C6776218.294134804", {
+     layers: 'ZA_SECH_SUIVI'
+     
+    }),
 
     "None": L.tileLayer("", {
       maxZoom: map.getMaxZoom()
