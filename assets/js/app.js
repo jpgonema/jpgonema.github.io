@@ -62,10 +62,6 @@ const layers = {
       maxZoom: map.getMaxZoom(),
       attribution: "USGS",
     }),
-    
- 
-     
-    }),
 
     "None": L.tileLayer("", {
       maxZoom: map.getMaxZoom()
