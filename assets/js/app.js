@@ -63,8 +63,15 @@ const layers = {
       attribution: "USGS",
     }),
     
+       "Topo3": L.tileLayer("https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}", {
+      maxNativeZoom: 16,
+      maxZoom: map.getMaxZoom(),
+      attribution: "USGS",
+    }),
+    
+    
+    
     "Propluvia": L.tileLayer.WMS("https://carto2.geo-ide.din.developpement-durable.gouv.fr/rest-api/ows/01f97add-7e35-4d4e-a55c-947d955a4e47", {
-      
     format: 'image/png',
     transparent: true,
     layers: "ZA_SECH_SUIVI",
